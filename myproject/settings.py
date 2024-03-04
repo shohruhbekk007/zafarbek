@@ -124,6 +124,9 @@ USE_TZ = True
 
 
 STATIC_URL = 'static/'
+import os
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 
 MEDIA_URL = '/media/'
